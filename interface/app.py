@@ -1,5 +1,9 @@
 # app.py
 
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import streamlit as st
 from pipeline.generate import generate_ad_post
 from pipeline.summarize import load_summarizer, SUMMARIZER_MODELS
